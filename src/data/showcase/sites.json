@@ -1,0 +1,32 @@
+[
+  {
+    "title": "C",
+    "image": "src/data/showcase/images/c.jpg",
+    "url": "https://www.youtube.com/watch?v=U3aXWizDbQ4"
+  },
+  {
+    "title": "CPP",
+    "image": "src/data/showcase/images/cpp.jpg",
+    "url": "https://www.youtube.com/watch?v=MNeX4EGtR5Y"
+  },
+  {
+    "title": "CSS",
+    "image": "src/data/showcase/images/css.jpg",
+    "url": "https://www.youtube.com/watch?v=OEV8gMkCHXQ"
+  },
+  {
+    "title": "Java",
+    "image": "src/data/showcase/images/java.jpg",
+    "url": "https://www.youtube.com/watch?v=l9AzO1FMgM8"
+  },
+  {
+    "title": "JavaScript",
+    "image": "src/data/showcase/images/js.jpg",
+    "url": "https://www.youtube.com/watch?v=DHjqpvDnNGE"
+  },
+  {
+    "title": "Python",
+    "image": "src/data/showcase/images/python.jpg",
+    "url": "https://www.youtube.com/watch?v=x7X9w_GIm1s"
+  }
+]

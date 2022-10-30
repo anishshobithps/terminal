@@ -1,0 +1,127 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import CoursesList from "~/components/courses-list.astro";
+
+const Courses = [
+  {
+    title: "C",
+    icon: "languages/c",
+    url: "https://youtube.com/watch?v=KnvbUiSxvbM&list=PL98qAXLA6aftD9ZlnjpLhdQAOFI8xIB6e",
+  },
+  {
+    title: "C++",
+    icon: "languages/cplusplus",
+    url: "https://www.youtube.com/watch?v=j8nAHeVKL08&list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL",
+  },
+  {
+    title: "Java",
+    icon: "languages/java",
+    url: "https://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJopttps://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop",
+  },
+  {
+    title: "JavaScript",
+    icon: "languages/javascript",
+    url: "https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuETttps://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET",
+  },
+  {
+    title: "Python",
+    icon: "languages/python",
+    url: "https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwUttps://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU",
+  },
+  {
+    title: "Kotlin",
+    icon: "languages/kotlin",
+    url: "https://www.youtube.com/watch?v=Org0vh-VSgA&list=PLsyeobzWxl7rooJFZhc3qPLwVROovGCfh",
+  },
+];
+
+const platforms = [
+  {
+    title: "Git",
+    icon: "utility/git",
+    url: "https://www.youtube.com/watch?v=evknSAkUIvs&list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi",
+  },
+  {
+    title: "Github",
+    icon: "utility/github",
+    url: "https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR",
+  },
+  {
+    title: "UI/UX",
+    icon: "utility/ux-ui",
+    url: "https://www.youtube.com/watch?v=Y7oQj72DuHE&list=PLD8AMy73ZVxXJ_kPhuaRunRBlozUXioD8",
+  },
+  {
+    title: "Algorithm",
+    icon: "utility/algorithm",
+    url: "https://www.youtube.com/watch?v=2TV0r94p8OY&list=PLbbtODcOYIoFs0PDlTdxpEsZiyDR2q9aA",
+  },
+  {
+    title: "Figma",
+    icon: "utility/figma",
+    url: "https://www.youtube.com/watch?v=keoL0B7NaEs&list=PLFW6ct83_wC_N-IrrU60lH4G0dV6u1B4n",
+  },
+  {
+    title: "MatLab",
+    icon: "utility/matlab",
+    url: "https://www.youtube.com/watch?v=0x4JhS1YpzI&list=PLjVLYmrlmjGcNZrPa9bRg0JVlcxLX4Mu9",
+  },
+];
+
+const practise = [
+  {
+    title: "Exercism",
+    icon: "practise/exercism",
+    url: "https://exercism.org/",
+  },
+  {
+    title: "Topcoder",
+    icon: "practise/topcoder",
+    url: "https://www.topcoder.com/",
+  },
+  {
+    title: "CodeChef",
+    icon: "practise/codechef",
+    url: "https://www.codechef.com/",
+  },
+  {
+    title: "CodeWars",
+    icon: "practise/codewars",
+    url: "https://www.codewars.com/",
+  },
+  {
+    title: "W3Schools",
+    icon: "practise/w3schools",
+    url: "https://www.w3schools.com/",
+  },
+  {
+    title: "Leetcode",
+    icon: "practise/leetcode",
+    url: "https://leetcode.com/",
+  }
+];
+---
+
+<ContentSection title="Courses" id="courses">
+  <Fragment slot="lead">
+    Through <span class="text-primary">effective learning and practice</span>,
+    Terminal brings your <span class="text-primary">knowledge to life</span>.
+  </Fragment>
+
+  <CoursesList
+  title="Programming Languages"
+  data={Courses}
+  url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+  <CoursesList
+  title="Platforms"
+  data={platforms}
+  url="https://docs.astro.build/guides/deploy/"
+  />
+  <CoursesList
+  title="Practise"
+  data={practise}
+  url="https://docs.astro.build/guides/deploy/"
+  />
+  
+</ContentSection>
